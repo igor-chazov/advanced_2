@@ -1,7 +1,7 @@
 import showSpecialAttack from '../app';
 
 test('должна возвращать извлечённый массив из объектов с четыремя полями', () => {
-  const received = [
+  const expected = [
     {
       id: 8,
       nameAttack: 'Двойной выстрел',
@@ -15,6 +15,6 @@ test('должна возвращать извлечённый массив из
       description: 'Описание недоступно',
     },
   ];
-  const expected = showSpecialAttack();
+  const received = showSpecialAttack();
   expect(received).toEqual(expected);
 });
